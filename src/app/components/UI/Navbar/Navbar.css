@@ -1,0 +1,17 @@
+.nav-item:hover {
+    text-decoration: underline; 
+    text-underline-offset: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .sticky-nav {
+        top: 0;
+        width: 100%;
+    }
+
+    .nav-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}

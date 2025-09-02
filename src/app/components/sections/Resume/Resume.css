@@ -1,0 +1,24 @@
+.resume-link {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold; 
+    border: 2px solid #171717;
+    padding: 12px 20px;
+    border-radius: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .resume-link {
+        color: #171717;
+        border: 3px solid #171717;
+        background-color: #DB504A;
+    }
+}
+
+.resume-body {
+    font-family: var(--font-geist-mono);
+}
+
+.resume {
+    max-height: 60vh;
+}

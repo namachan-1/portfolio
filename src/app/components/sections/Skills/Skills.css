@@ -1,0 +1,22 @@
+.skill {
+    padding: 2rem;
+    font-family: var(--font-geist-mono);
+    max-height: 20rem;
+    border: 3px solid var(--foreground);
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px var(--foreground);
+}
+
+.skill:hover {
+    transform: translateY(-20px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 10px 10px 0px var(--foreground);
+}
+
+@media screen and (max-width: 768px) {
+    .skill-container {
+        align-items: center;
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #f8ffe5;
+  --foreground: #171717;
+  width: 100vw;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #21221e;
+    --foreground: #e0e0e0;
+  }
+
+  .nav-links a {
+    color: var(--background);
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans);
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding-left: 2vh;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  .section {
+    padding-left: 3vh;
+  }
+}
