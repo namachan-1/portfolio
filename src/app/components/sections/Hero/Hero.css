@@ -49,14 +49,16 @@
 
 .hero-subheading {
     opacity: 0;
-    font-family: var(--font-geist-mono);
-    font-size: 1.5rem;
     animation: hero-heading 2s ease-in-out 2s forwards;
 }
 
 @keyframes hero-subheading {
     0% {
         opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
     }
 
     100% {
