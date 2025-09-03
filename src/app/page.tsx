@@ -3,25 +3,19 @@ import Hero from "./components/sections/Hero";
 import Resume from "./components/sections/Resume";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
+import About from "./components/sections/About";
 
 export default function Home() {
   return (
-    <div className="w-screen p-[32px] sm:p-[64px]">
+    <div className="flex flex-col w-screen items-center p-[32px]">
       <Navbar />
       <main className="w-full flex flex-col justify-center align-center ">
         <Hero />
         <Projects />
         <Skills />
+        <About />
         <Resume />
-        {/* Add more sections here as needed
-            * Projects
-            * Skills
-            * About
-        */}
       </main>
-      <footer className="">
-        <div>hi</div>
-      </footer>
     </div>
   );
 }
