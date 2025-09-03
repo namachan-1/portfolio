@@ -4,7 +4,7 @@ import "./Hero.css"
 
 const Hero = () => {
   return (
-    <div className="section hero flex flex-col items-center mt-[10vh] pt-[10vh]" id="hero">
+    <div className="section hero flex flex-col items-center mt-20 pt-20" id="hero">
         <h1 className="hero-heading text-7xl md:text-8xl lg:text-9xl font-bold">Nathaniel
             <br /> Chang
             <span className="red-dot relative inline-block"><Image src="./circle.svg" alt="Logo" width={50} height={50}/></span>

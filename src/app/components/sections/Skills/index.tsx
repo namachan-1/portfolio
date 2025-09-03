@@ -3,7 +3,7 @@ import "./Skills.css"
 
 const Skills = () => {
   return (
-    <div className="section skills h-screen mt-[10vh] pt-[10vh] pl-[20vh] max-w-5xl" id="skills">
+    <div className="section skills mt-20 pt-20 flex flex-col justify-center items-center lg:px-[10vw]" id="skills">
         <div className="skills-heading-container mb-8">
           <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">skills</h2>
         </div>

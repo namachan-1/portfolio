@@ -39,7 +39,7 @@ const projectData: Project[] = [
 
 const Projects = () => {
   return (
-    <div className="section projects h-screen flex flex-col mt-[10vh] pt-[10vh] lg:px-[10vh]" id="projects">
+    <div className="section projects flex flex-col mt-40 pt-40 lg:px-[10vw]" id="projects">
         <div className="projects-heading-container mb-8">
           <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">projects</h2>
             <p className="project-body text-md sm:text-lg md:text-xl mt-8 max-w-2x mb-[40px] font-geist-mono">
