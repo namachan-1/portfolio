@@ -1,6 +1,26 @@
-.nav-item:hover {
-    text-decoration: underline; 
-    text-underline-offset: 4px;
+.nav-item {
+    position: relative; /* This is key! It establishes the positioning context for the ::after element */
+    display: inline-block; /* Allows the element to wrap around the text and its width to be set */
+    text-decoration: none;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute; /* Position relative to the .nav-item */
+    left: 0;
+    bottom: -1px; /* Adjust this value to position the underline closer or further from the text */
+    width: 100%; /* Start with full width */
+    height: 1px; /* Thickness of the underline */
+    transform: scaleX(0); /* Start with no width (scaled down) */
+    transform-origin: right; /* Start scaling from the right */
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+    background-color: var(--foreground); /* Color of the underline */
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1); /* Scale to full width on hover */
+    transform-origin: left; /* Scale from the left on hover */
+    background-color: var(--foreground); /* Color of the underline */
 }
 
 @media screen and (max-width: 768px) {
