@@ -6,21 +6,26 @@ interface Project {
     id: number;
     title: string;
     description: string;
-    imageUrl: string;
+    imageUrl: string | null;
     projectUrl: string;
 }
 
 const ProjectCard = ({title, description, imageUrl, projectUrl}: Project) => {
   return (
-    <div className="project-card border rounded-lg bg-[#DCC495] shadow-lg hover:shadow-2xl 
-        transition-shadow duration-300 w-full max-w-xl
-        odd:self-start even:self-end">
+    <div className="project-card rounded-lg bg-[#383D3B] text-[--text] shadow-lg
+        transition-transform duration-300 w-full max-w-xl
+        odd:self-start even:self-end hover:scale-105 object-cover">
       <Link href={projectUrl} target="_blank" rel="noopener noreferrer">
-        <div>
-            <Image src={imageUrl} alt={title} width={75} height={50} className="w-full object-cover"/>
+        <div className="rounded-lg overflow-hidden">
+          {imageUrl ?
+            <Image src={imageUrl} alt={title} width={1800} height={1300} quality={100} className="w-full object-cover "/>
+            : <div className="w-full h-[20rem] sm:h-[25rem] object-cover flex items-center justify-center">
+                <span className="project-image-placeholder text-gray-500">Coming Soon</span>
+            </div>
+          }
             <div className="p-4">
                 <h3 className="text-xl font-bold mb-2">{title}</h3>
-                <p className="text-md text-gray-700">{description}</p>
+                <p className="text-md">{description}</p>
             </div>
         </div>
       </Link>

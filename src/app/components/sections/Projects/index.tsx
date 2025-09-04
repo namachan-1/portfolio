@@ -6,7 +6,7 @@ interface Project {
     title: string;
     date: string;
     description: string;
-    imageUrl: string;
+    imageUrl: string | null;
     projectUrl: string;
 }
 
@@ -16,7 +16,7 @@ const projectData: Project[] = [
         title: "Stock Rater",
         description: "A React Native app that rates stocks based on various financial metrics, news articles and data visualization to make informed decisions.",
         date: "In Progress",
-        imageUrl: "/path/to/image1.jpg",
+        imageUrl: "/images/stock_chart.jpg",
         projectUrl: "https://link-to-project-one.com"
     }, 
     {
@@ -25,25 +25,26 @@ const projectData: Project[] = [
         description: "A brief description of Project Two.",
         date: "In Progress",
         imageUrl: "/path/to/image2.jpg",
-        projectUrl: "https://link-to-project-two.com"
+        projectUrl: "#"
     },
     {
         id: 3,
         title: "Another Project",
-        description: "A brief description of Project Two.",
+        description: "Coming Soon!",
         date: "In Progress",
-        imageUrl: "/path/to/image2.jpg",
-        projectUrl: "https://link-to-project-two.com"
+        imageUrl: null,
+        projectUrl: "#"
     },
 ]
+
 
 const Projects = () => {
   return (
     <div className="section projects flex flex-col mt-40 pt-40 lg:px-[10vw]" id="projects">
         <div className="projects-heading-container mb-8">
           <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">projects</h2>
-            <p className="project-body text-md sm:text-lg md:text-xl mt-8 max-w-2x mb-[40px] font-geist-mono">
-                Come check out some of my recent work!
+            <p className="project-body text-md sm:text-lg md:text-xl mt-8 max-w-2x font-geist-mono">
+                Come check out some of my recent/coming work!
             </p>
         </div>
         <div className="projects-container flex flex-col items-center gap-10 w-full">
