@@ -36,17 +36,6 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-    .red-dot {
-        width: 20px;
-        height: 20px;
-    }
-
-    .hero {
-        margin-top: 2vh;
-    }
-}
-
 .hero-subheading {
     opacity: 0;
     animation: hero-heading 2s ease-in-out 2s forwards;
