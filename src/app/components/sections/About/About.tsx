@@ -16,7 +16,7 @@ const About = () => {
                 </p>
                 <br />
                 <p className="about-heading text-md sm:text-lg md:text-xl font-geist-mono">
-                    Here are some favorite pictures I&apos;ve taken over the years!
+                    Here are some favorite pictures of my travels over the years!
                 </p>
 
                 <div className="image-grid-container flex justify-center items-center mt-8">

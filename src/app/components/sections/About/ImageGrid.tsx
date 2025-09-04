@@ -17,6 +17,7 @@ const ImageGrid = () => {
           alt={image.alt}
           width={400}
           height={300}
+          className="transition-transform duration-300 hover:scale-105 rounded-lg object-cover"
         />
       ))}
     </div>
