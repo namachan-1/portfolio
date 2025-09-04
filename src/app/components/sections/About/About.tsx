@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div className="section about mt-[10vh] pt-[10vh] lg:px-[10vw]" id="about">
         <div className="about-heading-container mb-8">
-          <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">about</h2>
+          <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">about<span className="inline-line-right"></span></h2>
         </div>
         <div className="about-container flex flex-row gap-10">
             <div className="about">

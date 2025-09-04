@@ -20,3 +20,8 @@
     }
 }
 
+.skill-highlight {
+    background-color: var(--accent);
+    padding: 0 0.3rem;
+    border-radius: 5px;
+}

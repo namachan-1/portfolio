@@ -7,8 +7,13 @@ html {
 }
 
 :root {
-  --background: #f8ffe5;
-  --foreground: #171717;
+  --background: #D9E5D6;
+  --foreground: #383D3B;
+  --accent: #D5573B;
+  --text: #FFFFFF; 
+  --card-text:#FFFFFF;
+  --card-bg: #383D3B;
+  --inline-line: #172A3A
 }
 
 body {
@@ -22,10 +27,40 @@ body {
   overflow-x: hidden;
 }
 
+.inline-line-right {
+  display: inline-block;
+  width: 70px;
+  height: 25px;
+  background-color: var(--accent);
+  margin-left: 1rem;
+  vertical-align: middle;
+  clip-path: polygon(25% 20%, 75% 20%, 100% 50%, 75% 75%, 25% 75%, 0% 50%);
+  animation: inline-line-right 2s cubic-bezier(0.68, -0.55, 0.27, 1.0) forwards;
+}
+
+@keyframes inline-line-right {
+  0% {
+    transform: translateX(500px);
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #21221e;
-    --foreground: #e0e0e0;
+    --background: #383D3B;
+    --foreground: #D9E5D6;
+    --accent: #D5573B;
+    --card-text: #383D3B;
+    --card-bg: #D9E5D6;
   }
 
   .nav-links a {
@@ -37,16 +72,4 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans);
-}
-
-@media screen and (max-width: 768px) {
-  .section {
-    padding-left: 0;
-  }
-}
-
-@media screen and (max-width: 1366px) {
-  .section {
-    padding-left: 1vh;
-  }
 }

@@ -14,13 +14,13 @@
     transform: scaleX(0); /* Start with no width (scaled down) */
     transform-origin: right; /* Start scaling from the right */
     transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
-    background-color: var(--foreground); /* Color of the underline */
+    background-color: #383D3B; /* Color of the underline */
 }
 
 .nav-item:hover::after {
     transform: scaleX(1); /* Scale to full width on hover */
     transform-origin: left; /* Scale from the left on hover */
-    background-color: var(--foreground); /* Color of the underline */
+    background-color: #383D3B; /* Color of the underline */
 }
 
 @media screen and (max-width: 768px) {

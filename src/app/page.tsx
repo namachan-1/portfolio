@@ -7,7 +7,7 @@ import About from "./components/sections/About/About";
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-screen items-center p-8">
+    <div className="flex flex-col w-screen items-center p-8 xl:max-w-[80vw]">
       <Navbar />
       <main className="w-full flex flex-col justify-center align-center ">
         <Hero />

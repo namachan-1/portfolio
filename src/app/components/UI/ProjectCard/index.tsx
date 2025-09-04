@@ -12,7 +12,7 @@ interface Project {
 
 const ProjectCard = ({title, description, imageUrl, projectUrl}: Project) => {
   return (
-    <div className="project-card rounded-lg bg-[#383D3B] text-[--text] shadow-lg
+    <div className="project-card rounded-lg bg-[--card-bg] text-[--card-text] shadow-lg
         transition-transform duration-300 w-full max-w-xl
         odd:self-start even:self-end hover:scale-105 object-cover">
       <Link href={projectUrl} target="_blank" rel="noopener noreferrer">

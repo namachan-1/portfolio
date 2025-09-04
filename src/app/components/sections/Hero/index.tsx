@@ -10,9 +10,9 @@ const Hero = () => {
         </h1>
 
         <p className="hero-subheading flex justify-start text-md sm:text-lg md:text-xl mt-8 max-w-md md:max-w-2xl font-geist-mono">
-            Hi there! I&apos;m someone who loves to solves interesting problems, travel, and spend time with my wife and dog. Let&apos;s chat!
+            Hi there! I&apos;m a software engineer who loves to solves interesting problems, travel, and spend time with my wife and dog. Let&apos;s chat!
         </p>
-        <h2></h2>
+
     </div>
   )
 }

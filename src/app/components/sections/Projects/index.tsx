@@ -21,10 +21,10 @@ const projectData: Project[] = [
     }, 
     {
         id: 2,
-        title: "Another Project",
-        description: "A brief description of Project Two.",
+        title: "Budget App",
+        description: "Uses React Native and Expo to help users track their expenses and manage their budget effectively. Uses Plaid API to securely connect personal accounts to fetch transaction data.",
         date: "In Progress",
-        imageUrl: "/path/to/image2.jpg",
+        imageUrl: null,
         projectUrl: "#"
     },
     {
@@ -42,7 +42,7 @@ const Projects = () => {
   return (
     <div className="section projects flex flex-col mt-40 pt-40 lg:px-[10vw]" id="projects">
         <div className="projects-heading-container mb-8">
-          <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">projects</h2>
+          <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">projects<span className="inline-line-right"></span></h2>
             <p className="project-body text-md sm:text-lg md:text-xl mt-8 max-w-2x font-geist-mono">
                 Come check out some of my recent/coming work!
             </p>
