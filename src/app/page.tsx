@@ -3,7 +3,7 @@ import Hero from "./components/sections/Hero";
 import Resume from "./components/sections/Resume";
 import Skills from "./components/sections/Skills";
 import Projects from "./components/sections/Projects";
-import About from "./components/sections/About";
+import About from "./components/sections/About/About";
 
 export default function Home() {
   return (

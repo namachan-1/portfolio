@@ -18,10 +18,10 @@ const Navbar = () => {
                     className="nav-links flex justify-end items-center"
                 >
                     <ul className="nav-list flex flex-row gap-8 px-3" role="navigation">
-                    <li><Link href="#projects" className="nav-item">Projects</Link></li>
-                    <li><Link href="#skills" className="nav-item" onClick={() => scrollToSection('skills')} scroll={false}>Skills</Link></li>
-                    <li><Link href="#contact" className="nav-item">About</Link></li>
-                    <li><Link href="#resume" className="nav-item" onClick={() => scrollToSection('resume')} scroll={false}>Resume</Link></li>
+                        <li><Link href="#projects" className="nav-item" onClick={() => scrollToSection('projects')}>Projects</Link></li>
+                        <li><Link href="#skills" className="nav-item" onClick={() => scrollToSection('skills')} scroll={false}>Skills</Link></li>
+                        <li><Link href="#about" className="nav-item" onClick={() => scrollToSection('about')}>About</Link></li>
+                        <li><Link href="#resume" className="nav-item" onClick={() => scrollToSection('resume')} scroll={false}>Resume</Link></li>
                     </ul>
                 </div>
             </nav>

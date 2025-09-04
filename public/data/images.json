@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "src": "/images/grid-images/baseball_field.jpg",
+        "alt": "Sunset view of a baseball field"
+    },
+    {
+        "id": 2,
+        "src": "/images/grid-images/bench.jpg",
+        "alt": "Morning light with benches under an underpass"
+    },
+        {
+        "id": 3,
+        "src": "/images/grid-images/cathedral.jpg",
+        "alt": "Beautiful cathedral in Italy"
+    },
+        {
+        "id": 4,
+        "src": "/images/grid-images/ceiling.jpg",
+        "alt": "Ceiling with intricate designs"
+    },
+        {
+        "id": 5,
+        "src": "/images/grid-images/clearing.jpg",
+        "alt": "Serene clearing in a forest heading to the beach"
+    },
+        {
+        "id": 6,
+        "src": "/images/grid-images/cute_shop.jpg",
+        "alt": "Cute interior of an ice cream shop"
+    },
+        {
+        "id": 7,
+        "src": "/images/grid-images/fallen_tree.jpg",
+        "alt": "Ethereal fallen tree in a forest"
+    },
+        {
+        "id": 8,
+        "src": "/images/grid-images/forest.jpg",
+        "alt": "Lush green forest with many trees and ferns"
+    },
+        {
+        "id": 9,
+        "src": "/images/grid-images/pink_flowers.jpg",
+        "alt": "Pink flowers"
+    },
+        {
+        "id": 10,
+        "src": "/images/grid-images/restaurant.jpg",
+        "alt": "Restaurant interior with warm lighting and signage"
+    },
+        {
+        "id": 11,
+        "src": "/images/grid-images/sunny_day.jpg",
+        "alt": "Sunny day with a field and a bridge in the background"
+    },
+    {   
+        "id": 13,
+        "src": "/images/grid-images/swiss_waterfall.jpg",
+        "alt": "Swiss waterfall that is very tall and grand"
+    }
+]
