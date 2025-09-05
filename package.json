@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "next": "15.5.0",
-    "preline": "^3.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-intersection-observer": "^9.16.0"
