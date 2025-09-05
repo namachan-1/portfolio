@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
 
 interface Project {
     id: number;
@@ -11,10 +12,15 @@ interface Project {
 }
 
 const ProjectCard = ({title, description, imageUrl, projectUrl}: Project) => {
+    const { ref, inView } = useInView({
+        threshold: 0.5,
+        triggerOnce: true,
+    });
+  
   return (
-    <div className="project-card rounded-lg bg-[--card-bg] text-[--card-text] shadow-lg
-        transition-transform duration-300 w-full max-w-xl
-        odd:self-start even:self-end hover:scale-105 object-cover">
+    <div ref={ref} className={`project-card rounded-lg bg-[--card-bg] text-[--card-text] shadow-lg
+        transition-all duration-300 w-full max-w-xl
+        odd:self-start even:self-end hover:scale-105 object-cover ease-in ${inView ? 'opacity-100' : 'opacity-0'}`}>
       <Link href={projectUrl} target="_blank" rel="noopener noreferrer">
         <div className="rounded-lg overflow-hidden">
           {imageUrl ?

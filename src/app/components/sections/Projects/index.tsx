@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectCard from '../../UI/ProjectCard';
+import { useInView } from 'react-intersection-observer';
 
 interface Project {
     id: number;
@@ -37,11 +38,16 @@ const projectData: Project[] = [
     },
 ]
 
-
+// TODO: add new pages for each project and link to them from each project card.
 const Projects = () => {
+    const { ref, inView } = useInView({
+        threshold: 0.1,
+        triggerOnce: true,
+    });
+
   return (
-    <div className="section projects flex flex-col mt-40 pt-40 lg:px-[10vw]" id="projects">
-        <div className="projects-heading-container mb-8">
+    <div ref={ref} className="section projects flex flex-col mt-40 pt-40 lg:px-[10vw]" id="projects">
+        <div className={`projects-heading-container mb-8 transition-opacity duration-1000 ease-in ${inView ? 'opacity-100' : 'opacity-0'}`}>
           <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">projects<span className="inline-line-right"></span></h2>
             <p className="project-body text-md sm:text-lg md:text-xl mt-8 max-w-2x font-geist-mono">
                 Come check out some of my recent/coming work!

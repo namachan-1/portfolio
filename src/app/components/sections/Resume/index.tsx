@@ -1,8 +1,13 @@
 import React from 'react'
+import { useInView } from 'react-intersection-observer';
 
 const Resume = () => {
+  const { ref, inView } = useInView({
+      threshold: 0.1,
+      triggerOnce: true,
+  });
   return (
-    <div className="section resume lg:mb-[30vh] mb-[10vh] md:mb-[20vh] mt-[20vh] lg:px-[10vw]" id="resume">
+    <div ref={ref} className={`section resume lg:mb-[30vh] mb-[10vh] md:mb-[20vh] mt-[20vh] lg:px-[10vw] transition-opacity duration-300 ease-in ${inView ? 'opacity-100' : 'opacity-0'}`} id="resume">
         <h2 className="main-heading text-6xl sm:text-7xl md:text-8xl font-bold">resume<span className="inline-line-right"></span></h2>
         <div>
             <p className="resume-body text-md sm:text-lg md:text-xl mt-8 max-w-2x mb-[40px] font-geist-mono">

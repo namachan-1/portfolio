@@ -35,7 +35,7 @@ body {
   margin-left: 1rem;
   vertical-align: middle;
   clip-path: polygon(25% 20%, 75% 20%, 100% 50%, 75% 75%, 25% 75%, 0% 50%);
-  animation: inline-line-right 2s cubic-bezier(0.68, -0.55, 0.27, 1.0) forwards;
+  animation: inline-line-right 5s cubic-bezier(0.68, -0.55, 0.27, 1.0) forwards;
 }
 
 @keyframes inline-line-right {
