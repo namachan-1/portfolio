@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nathaniel Chang - Portfolio",
-  description: "The portfolio of Nathaniel Chang, a software engineer based in San Francisco, CA.",
+  title: "Portfolio | Nathaniel Chang ",
+  description: "A portfolio showcasing the work of Nathaniel Chang, a full-stack developer specializing in React and Python.",
 };
 
 export default function RootLayout({
