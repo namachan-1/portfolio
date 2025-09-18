@@ -10,7 +10,7 @@ const Hero = () => {
         </h1>
 
         <p className="hero-subheading flex justify-start text-md sm:text-lg md:text-xl mt-8 max-w-md md:max-w-2xl font-geist-mono">
-            Hi there! I&apos;m a software engineer who loves to solves interesting problems, travel, and spend time with my wife and dog. Let&apos;s chat!
+            An aspiring solutions engineer dedicated to understanding each customer&apos;s unique needs and design tailored technical solutions that drive tangible results. When I&apos;m not solving technical problems, I&apos;m traveling the world and exploring with my wife and dog. Let&apos;s chat!
         </p>
 
     </div>

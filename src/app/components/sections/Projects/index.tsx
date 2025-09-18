@@ -14,11 +14,11 @@ interface Project {
 const projectData: Project[] = [
     {
         id: 1,
-        title: "Stock Rater",
-        description: "A React Native app that rates stocks based on various financial metrics, news articles and data visualization to make informed decisions.",
-        date: "In Progress",
-        imageUrl: "/images/stock_chart.jpg",
-        projectUrl: "https://link-to-project-one.com"
+        title: "Kyrie Fellowship Website",
+        description: "A React app built in collaboration with 2 other students to provide other students without Facebook a way to sign up for events/rides.",
+        date: "January 2020",
+        imageUrl: null,
+        projectUrl: "https://github.com/namachan-1/Kyriecfweb"
     }, 
     {
         id: 2,
@@ -30,10 +30,10 @@ const projectData: Project[] = [
     },
     {
         id: 3,
-        title: "Another Project",
-        description: "Coming Soon!",
+        title: "Stock Rater",
+        description: "A React Native app that rates stocks based on various financial metrics, news articles and data visualization to make informed decisions.",
         date: "In Progress",
-        imageUrl: null,
+        imageUrl: "/images/stock_chart.jpg",
         projectUrl: "#"
     },
 ]
